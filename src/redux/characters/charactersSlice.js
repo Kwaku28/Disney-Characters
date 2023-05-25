@@ -4,9 +4,8 @@ import {
   createAsyncThunk,
   isRejectedWithValue,
 } from '@reduxjs/toolkit';
-import axios from 'axios';
 
-const initialState = {
+export const initialState = {
   characters: [],
   status: 'idle',
   error: null,
@@ -19,8 +18,9 @@ export const getCharacters = createAsyncThunk(
   'characters/getCharacters',
   async () => {
     try {
-      const response = await axios.get(URL);
-      return response.data;
+      const res = await fetch(URL);
+      const response = await res.json();
+      return response;
     } catch (error) {
       return isRejectedWithValue(error.response);
     }
