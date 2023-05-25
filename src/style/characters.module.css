@@ -1,0 +1,50 @@
+.container {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background: rgb(81, 81, 155);
+  margin: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  border-bottom: 1px solid;
+}
+
+.container div {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  gap: 45px;
+  padding: 50px 7px;
+}
+
+.badge {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform ease-out 0.3s;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.badge img {
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (max-width: 512px) {
+  .card {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
