@@ -1,0 +1,47 @@
+.container {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background: rgb(121, 121, 168);
+  margin: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  border-bottom: 1px solid;
+}
+
+nav h3 {
+  text-align: center;
+}
+
+.container div {
+  display: flex;
+  gap: 20px;
+}
+
+.details {
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details img {
+  width: 70%;
+  height: 50vh;
+  margin: auto;
+}
+
+.details h2 {
+  text-align: center;
+}
+
+.profile {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
