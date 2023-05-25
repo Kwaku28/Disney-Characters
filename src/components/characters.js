@@ -3,12 +3,13 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Badge } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { FaMicrophone, FaCog, FaHome } from 'react-icons/fa';
 import { getCharacters } from '../redux/characters/charactersSlice';
 import { getCharacterProfile } from '../redux/profile/profileSlice';
+import styles from '../style/characters.module.css';
 
 function Characters() {
   const dispatch = useDispatch();
-
   const { characters, status, error } = useSelector((state) => state.characters);
 
   useEffect(() => {
@@ -31,24 +32,39 @@ function Characters() {
 
   return (
     <>
-      <section>
-        {characters.map((character) => (
-          <NavLink to={`/charactersPage/${character.id}`} key={character.id}>
-            <Badge
-              bg="secondary"
-              as="Button"
-              key={character.id}
-              id={character.id}
-              onClick={() => {
-                dispatch(getCharacterProfile(character.id));
-              }}
-            >
-              <img src={character.characterImage} alt="na" />
-              <h2>{character.name}</h2>
-            </Badge>
+      <div className={styles.container}>
+        <nav>
+          <NavLink to="/">
+            <FaHome style={{ color: 'rgb(17, 17, 143)' }} />
           </NavLink>
-        ))}
-      </section>
+          <h3>
+            Disney Characters
+          </h3>
+          <div>
+            <FaMicrophone style={{ cursor: 'pointer', color: 'rgb(17, 17, 143)' }} />
+            <FaCog style={{ cursor: 'pointer', color: 'rgb(17, 17, 143)' }} />
+          </div>
+        </nav>
+        <section className={styles.card}>
+          {characters.map((character) => (
+            <NavLink to={`/charactersPage/${character.id}`} key={character.id}>
+              <Badge
+                bg="secondary"
+                as="button"
+                className={styles.badge}
+                key={character.id}
+                id={character.id}
+                onClick={() => {
+                  dispatch(getCharacterProfile(character.id));
+                }}
+              >
+                <img src={character.characterImage} alt="na" />
+                <h2>{character.name}</h2>
+              </Badge>
+            </NavLink>
+          ))}
+        </section>
+      </div>
     </>
   );
 }
