@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the exact page 1`] = `[Function]`;
+
+exports[`Test Homepage component Renders the exact page 1`] = `[Function]`;
