@@ -40,7 +40,7 @@ function CharactersProfile() {
             <tbody>
               <tr>
                 <td>Films:</td>
-                <td>{profile.films.join(', ')}</td>
+                <td>{profile.films}</td>
               </tr>
               <tr>
                 <td>Shortfilms:</td>
@@ -48,11 +48,11 @@ function CharactersProfile() {
               </tr>
               <tr>
                 <td>Tvshows:</td>
-                <td>{profile.tvShows.join(', ')}</td>
+                <td>{profile.tvShows}</td>
               </tr>
               <tr>
                 <td>Videogames:</td>
-                <td>{profile.videoGames.join(', ')}</td>
+                <td>{profile.videoGames}</td>
               </tr>
               <tr>
                 <td>Parkattraction:</td>
