@@ -1,46 +1,58 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #fff;
-}
-
-.container {
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  margin: auto;
   background: #465bd1;
-  margin: 10px 0;
 }
 
-nav {
+.disney nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   font-size: 30px;
-  background: #324ad4;
 }
 
-.container div {
+.icons {
   display: flex;
   gap: 20px;
 }
 
 .disney {
-  background-image: url(../assets/walt-disney-logo.jpg);
+  background-image: url(../assets/Disney2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 800px;
+}
+
+.input {
+  display: flex;
+  justify-content: end;
+  margin: 10px 30px 0 0;
+}
+
+.search {
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 35px;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .container h3 {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
 }
 
 .card {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   width: 100%;
-  gap: 45px;
-  padding: 50px 7px;
+  padding: 10px 7px;
+  justify-content: center;
+  margin: auto;
 }
 
 .badge {
@@ -56,13 +68,47 @@ nav {
 }
 
 .badge img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  .disney nav {
+    font-size: 20px;
+  }
+
+  .disney {
+    height: 400px;
+  }
+
+  .container h3 {
+    font-size: 30px;
+  }
+
+  .badge img {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 512px) {
   .card {
     grid-template-columns: auto auto;
     justify-content: center;
+  }
+
+  .disney {
+    height: 300px;
+  }
+
+  .search {
+    width: 200px;
+    height: 25px;
+    font-size: 18px;
   }
 }
