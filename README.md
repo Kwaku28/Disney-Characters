@@ -62,7 +62,7 @@ This is a web application that displays a list of disney featured characters. Ea
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Disney Characters](https://...)
+- [Disney Characters](https://disney-characters-rt30.onrender.com)
 
 <!-- VIDEO PRESENTATION -->
 
