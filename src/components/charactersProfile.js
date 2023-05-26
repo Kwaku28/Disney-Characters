@@ -17,7 +17,7 @@ function CharactersProfile() {
   return (
     <>
       <div className={styles.container}>
-        <nav>
+        <nav className={styles.profileNav}>
           <NavLink to="/">
             <FaChevronLeft style={{ color: '#fff' }} />
           </NavLink>
