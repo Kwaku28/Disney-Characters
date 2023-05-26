@@ -1,8 +1,9 @@
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #fff;
-  margin: auto;
+  margin: 0;
   background: #465bd1;
+  overflow-x: hidden;
 }
 
 .disney nav {
@@ -20,14 +21,15 @@ body {
 
 .disney {
   background-image: url(../assets/Disney2.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  background-position-x: center;
+  height: 120vh;
 }
 
 .input {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 10px 30px 0 0;
 }
 
@@ -48,8 +50,7 @@ body {
 
 .card {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 100%;
+  grid-template-columns: auto auto auto;
   padding: 10px 7px;
   justify-content: center;
   margin: auto;
@@ -72,9 +73,16 @@ body {
   width: 300px;
 }
 
+@media screen and (max-width: 950px) {
+  .badge img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     justify-content: center;
   }
 
@@ -83,7 +91,13 @@ body {
   }
 
   .disney {
-    height: 400px;
+    height: 450px;
+  }
+
+  .search {
+    width: 200px;
+    height: 25px;
+    font-size: 18px;
   }
 
   .container h3 {
@@ -107,8 +121,13 @@ body {
   }
 
   .search {
-    width: 200px;
+    width: 150px;
     height: 25px;
     font-size: 18px;
+  }
+
+  .badge img {
+    height: 150px;
+    width: 150px;
   }
 }
