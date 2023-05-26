@@ -16,6 +16,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -56,6 +57,18 @@ This is a web application that displays a list of disney featured characters. Ea
 - **[Connect API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Disney Characters](https://...)
+
+<!-- VIDEO PRESENTATION -->
+
+## Video Presentation <a name="live-demo"></a>
+
+- [Video Presentation](https://www.loom.com/share/e8230155b11f403eb8511b81af302759)
 
 <!-- GETTING STARTED -->
 
