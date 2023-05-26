@@ -1,10 +1,13 @@
+body {
+  font-size: 20px;
+}
+
 .container {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background: #465bd1;
-  margin: 10px 0;
 }
 
-nav {
+.profileNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,12 +33,13 @@ nav h3 {
 
 .details img {
   width: 70%;
-  height: 50vh;
+  height: 80vh;
   margin: auto;
 }
 
 .details h2 {
   text-align: center;
+  font-size: 50px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -45,4 +49,18 @@ nav h3 {
 
 td {
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .profileNav {
+    font-size: 20px;
+  }
+
+  .details img {
+    height: 50vh;
+  }
+
+  .details h2 {
+    font-size: 30px;
+  }
 }
