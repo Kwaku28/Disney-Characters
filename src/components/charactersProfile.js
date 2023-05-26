@@ -19,15 +19,15 @@ function CharactersProfile() {
       <div className={styles.container}>
         <nav>
           <NavLink to="/">
-            <FaChevronLeft style={{ color: 'rgb(17, 17, 143)' }} />
+            <FaChevronLeft style={{ color: '#fff' }} />
           </NavLink>
           <h3>
             {profile.name}
             &apos;s Profile
           </h3>
           <div>
-            <FaMicrophone style={{ cursor: 'pointer', color: 'rgb(17, 17, 143)' }} />
-            <FaCog style={{ cursor: 'pointer', color: 'rgb(17, 17, 143)' }} />
+            <FaMicrophone style={{ cursor: 'pointer', color: '#fff' }} />
+            <FaCog style={{ cursor: 'pointer', color: '#fff' }} />
           </div>
         </nav>
 
