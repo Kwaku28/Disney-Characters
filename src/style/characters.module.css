@@ -1,0 +1,133 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  margin: 0;
+  background: #465bd1;
+  overflow-x: hidden;
+}
+
+.disney nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.disney {
+  background-image: url(../assets/Disney2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 120vh;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 30px 0 0;
+}
+
+.search {
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 35px;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.container h3 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px 7px;
+  justify-content: center;
+  margin: auto;
+}
+
+.badge {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform ease-out 0.3s;
+  color: #fff;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.badge img {
+  height: 250px;
+  width: 300px;
+}
+
+@media screen and (max-width: 950px) {
+  .badge img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .disney nav {
+    font-size: 20px;
+  }
+
+  .disney {
+    height: 450px;
+  }
+
+  .search {
+    width: 200px;
+    height: 25px;
+    font-size: 18px;
+  }
+
+  .container h3 {
+    font-size: 30px;
+  }
+
+  .badge img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .card {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .disney {
+    height: 300px;
+  }
+
+  .search {
+    width: 150px;
+    height: 25px;
+    font-size: 18px;
+  }
+
+  .badge img {
+    height: 150px;
+    width: 150px;
+  }
+}
