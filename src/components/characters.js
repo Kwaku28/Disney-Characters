@@ -35,16 +35,18 @@ function Characters() {
       <div className={styles.container}>
         <nav>
           <NavLink to="/">
-            <FaHome style={{ color: 'rgb(17, 17, 143)' }} />
+            <FaHome style={{ color: '#fff' }} />
           </NavLink>
           <h3>
-            Disney Characters
+            Disney
           </h3>
           <div>
-            <FaMicrophone style={{ cursor: 'pointer', color: 'rgb(17, 17, 143)' }} />
-            <FaCog style={{ cursor: 'pointer', color: 'rgb(17, 17, 143)' }} />
+            <FaMicrophone style={{ cursor: 'pointer', color: '#fff' }} />
+            <FaCog style={{ cursor: 'pointer', color: '#fff' }} />
           </div>
         </nav>
+        <div className={styles.disney} />
+        <h3>Characters</h3>
         <section className={styles.card}>
           {characters.map((character) => (
             <NavLink to={`/charactersPage/${character.id}`} key={character.id}>
